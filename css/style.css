@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização Index */
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    padding: 25px 50px;
+    box-shadow: 0px 0 10px 0px black;
+    border-bottom: 1px rgb(165, 165, 165);
+}
+
+.cabecalho img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transform: translateY(-60px);
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+.btn button {
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 2px solid #fa063b;
+    box-shadow: 0px 0 2px 0px black;
+    background-color: #fa063b;
+    color: #FFFFFF;
+    letter-spacing: 7px;
+    transition: 0.1s;
+}
+
+.btn button:hover {
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 2px solid #fa063b;
+    box-shadow: 0px 0 2px 0px black;
+    background-color: #ffffff00;
+    color: #fa063b;
+    letter-spacing: 7px;
+    transition: 0.1s;
+}
+
+.main-index {
+    height: 500px;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 50px;
+}
+
+.main-index h1{
+    font-size: 35px;
+}
+
+.main-index h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Estilização Login */
+
+.video-background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position:absolute;
+}
+
+.main-login {
+    padding: 84px 200px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 30% 70%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #FFFFFF;
+    backdrop-filter: blur(1.5px);
+    border-radius: 25px;
+    height: 430px;
+}
+
+.box-img {
+    background: url(/midia/astronauta.png) no-repeat center;
+    background-size: 300px;
+    border-radius: 25px 0 0 25px;
+}
+
+.box-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.box-forms img {
+    width: 85px;
+}
+
+.box-forms h1 {
+    font-size: 23px;
+    margin: 0 150px;
+    text-align: center;
+    font-weight: 600;
+    color: #06a0fa;
+}
+
+.box-forms h2 {
+    font-size: 13px;
+    margin:0 200px;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(19, 19, 19);
+}
+
+.box-forms fieldset {
+    border: 0;
+    padding: 15px 0;
+    width: 350px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.campo label {
+    padding: 5px 0;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+.campo input {
+    padding: 12px 7px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+
+.lembrar {
+    font-size: 13px;
+}
+
+.lembrar input {
+    width: 13px;
+}
+
+.box-forms button {
+    margin: 10px 0;
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #06a0fa;
+    background-color: #06a0fa;
+    color: #FFFFFF;
+    letter-spacing: 7px;
+    transition: 0.1s;
+}
+
+.box-forms button:hover {
+    margin: 10px 0;
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #06a0fa;
+    background-color: #ffffff;
+    color: #06a0fa;
+    letter-spacing: 7px;
+    transition: 0.1s;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 150px;
+    background-color: rgb(19, 19, 19);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: rgb(78, 78, 78);
+}
+
+/* Estilização Pop-up */
+
+.pop-up {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sucesso {
+    color: green;
+}
+
+.erro {
+    color: red;
+}
+
+
+
+
+

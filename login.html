@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDEATEC</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="/midia/favicon.png" />
+
+    <script src="/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <video autoplay loop muted playsinline class="video-background">
+      <source src="/midia/video-gradiente.mp4" />
+    </video>
+    <main class="main-login">
+      <div class="box">
+        <div class="box-img">
+          <br />
+        </div>
+        <div class="box-forms">
+          <img src="/midia/logo.png" alt="Logo Ideatec" />
+          <h1>PAINEL IDEATEC</h1>
+          <h2>Mergulhe em uma plataforma que respira tecnologia!</h2>
+          <form
+            id="loginForm"
+            action="#"
+            method="get"
+            onsubmit="return validaLogin(event)"
+          >
+            <fieldset>
+              <div class="campo">
+                <label for="idEmail">E-mail</label>
+                <input
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="Digite seu e-mail"
+                  required minlength="7"
+                  oninvalid="this.setCustomValidity('Caractéres insuficientes.');"
+                />
+              </div>
+              <div class="campo">
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="txtSenha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  required
+                  pattern="[A-Za-z0-9]{0-20}"
+                  oninvalid="this.setCustomValidity('Senha fora do padrão.')"
+                />
+              </div>
+              <div class="lembrar">
+                <input
+                  type="checkbox"
+                  name="txtLembrar"
+                  id="idLembrar"
+                  value="lembrete"
+                  checked
+                />
+                <label for="idLembrar">Lembrar-me</label>
+              </div>
+              <div>
+                <button type="submit">ENTRAR</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div id="popUp" class="pop-up">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p id="popUpMessage" class="valida"></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2024 IDEATEC, Todos os Direitos Reservados.</p>
+    </footer>
+  </body>
+</html>
